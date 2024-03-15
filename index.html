@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="bg-dark bg-gradient">
+        <div class="container">
+            <nav class="nav d-flex align-items-center justify-content-between p-3">
+                <a href="#" class="text-decoration-none h1 fs-1 text-light">Landing</a>
+
+                <ul class="d-flex align-items-center gap-5 mt-4">
+                    <li class="list-unstyled">
+                        <a href="#" class="text-decoration-none text-light h5">Home</a>
+                    </li>
+                    <li class="list-unstyled">
+                        <a href="#components" class="text-decoration-none text-light h5">Components</a>
+                    </li>
+                    <li class="list-unstyled">
+                        <a href="#form" class="text-decoration-none text-light h5">Form</a>
+                    </li>
+                </ul>
+
+                <input type="text" class="p-3 rounded-5" placeholder="Search...">
+
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" style="transition: all 0.2s ease-in-out;">
+                        <li><a class="dropdown-item h4" href="#">Log in</a></li>
+                        <li><a class="dropdown-item h4" href="#">Sig in</a></li>
+                        <li><a class="dropdown-item h4" href="#">Help center</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="components">
+            <div class="container p-5 border border-danger-subtle">
+
+                <h1 class="text-light first">Components</h1>
+
+                <div class="badges border border-light-subtle mt-5 p-5">
+                    <div class="wrapper_title p-4">
+
+                        <span class="h2 text-success">Badge</span> <br><br>
+                        <p class="h3 text-white">
+                            Documentation and examples for badges, our small count and labeling component.
+                            On this page
+                            <br><br><br>
+                            <span class="text-success">Examples</span> <br><br>
+                            Headings
+                            Buttons
+                            Positioned
+                            Background colors
+                            Pill badges
+                            CSS
+                            Variables
+                            Sass variables
+                            Examples
+                            Badges scale to match the size of the immediate parent element by using relative font sizing
+                            and
+                            em units. As of v5, badges no longer have focus or hover styles for links.
+                        </p>
+                    </div>
+
+                    <span class="h1 text-warning">Headings:</span> <br><br>
+
+                    <div class="wrapper">
+
+                        <h1 class="text-danger mt-5">Example heading <span class="badge text-bg-light">New</span></h1>
+                        <h2 class="text-danger mt-5">Example heading <span class="badge text-bg-light">New</span></h2>
+                        <h3 class="text-danger mt-5">Example heading <span class="badge text-bg-light">New</span></h3>
+                        <h4 class="text-danger mt-5">Example heading <span class="badge text-bg-light">New</span></h4>
+                        <h5 class="text-danger mt-5">Example heading <span class="badge text-bg-light">New</span></h5>
+                        <h6 class="text-danger mt-5">Example heading <span class="badge text-bg-light">New</span></h6>
+
+                    </div>
+                </div>
+
+                <div class="close_button border border-light-subtle mt-5 p-5">
+                    <div class="wrapper_title p-4">
+
+                        <span class="h2 text-success">Close button</span> <br><br>
+                        <p class="h3 text-white">
+                            A generic close button for dismissing content like modals and alerts.
+                            <br><br><br>
+                            <span class="text-success">Example</span> <br><br>
+                            Provide an option to dismiss or close a component with .btn-close. Default styling is
+                            limited, but highly customizable. Modify the Sass variables to replace the default
+                            background-image. Be sure to include text for screen readers, as we’ve done with aria-label.
+                        </p>
+                    </div>
+
+                    <span class="h1 text-warning">Close button</span> <br><br>
+
+                    <div class="wrapper">
+
+                        <button type="button" class="btn-close bg-white" aria-label="Close"></button>
+
+                    </div>
+                </div>
+
+                <div class="pagination border border-light-subtle mt-5 p-5">
+                    <div class="wrapper_title p-4">
+
+                        <span class="h2 text-success">Pagination</span> <br><br>
+                        <p class="h3 text-white">
+                            Documentation and examples for showing pagination to indicate a series of related content
+                            exists across multiple pages.
+                            <br><br><br>
+                            <span class="text-success">Overview</span> <br><br>
+                            We use a large block of connected links for our pagination, making links hard to miss and
+                            easily scalable—all while providing large hit areas. Pagination is built with list HTML
+                            elements so screen readers can announce the number of available links. Use a wrapping
+                            nav' element to identify it as a navigation section to screen readers and other assistive
+                            technologies.
+
+                            In addition, as pages likely have more than one such navigation section, it’s advisable to
+                            provide a descriptive aria-label for the nav' to reflect its purpose. For example, if the
+                            pagination component is used to navigate between a set of search results, an appropriate
+                            label could be aria-label="Search results pages".
+                        </p>
+                    </div>
+
+                    <div class="wrapper">
+
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="form">
+            <div class="container p-5 border border-danger-subtle">
+
+                <h1 class="text-light first">Form</h1>
+
+                <div class="badges border border-light-subtle mt-5 p-5">
+                    <div class="wrapper_title p-4">
+
+                        <span class="h2 text-success">Form controls</span> <br><br>
+                        <p class="h3 text-white">
+                            Give textual form controls like input's and textarea's an upgrade with custom styles,
+                            sizing, focus states, and more.
+                            <br><br><br>
+                            <span class="text-success">Example</span> <br><br>
+                            Form controls are styled with a mix of Sass and CSS variables, allowing them to adapt to
+                            color modes and support any customization method.
+                        </p>
+                    </div>
+
+                    <div class="wrapper">
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label h1 text-warning">Email
+                                address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label h1 text-warning">Example
+                                textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="checks_and_radios border border-light-subtle mt-5 p-5">
+                    <div class="wrapper_title p-4">
+
+                        <span class="h2 text-success">Checks and radios
+                        </span> <br><br>
+                        <p class="h3 text-white">
+                            Create consistent cross-browser and cross-device checkboxes and radios with our completely
+                            rewritten checks component.
+                            <br><br><br>
+                            <span class="text-success">Approach</span> <br><br>
+                            Browser default checkboxes and radios are replaced with the help of .form-check, a series of
+                            classes for both input types that improves the layout and behavior of their HTML elements,
+                            that provide greater customization and cross browser consistency. Checkboxes are for
+                            selecting one or several options in a list, while radios are for selecting one option from
+                            many.
+                            Structurally, our input's and label's are sibling elements as opposed to an input' within
+                            a label'. This is slightly more verbose as you must specify id and for attributes to
+                            relate the input' and label'. We use the sibling selector (~) for all our input'
+                            states, like :checked or :disabled. When combined with the .form-check-label
+                            class, we can easily style the text for each item based on the input'’s state.
+                            Our checks use custom Bootstrap icons to indicate checked or indeterminate
+                            states.
+                        </p>
+                    </div>
+
+                    <span class="h1 text-warning">Checks</span> <br><br>
+
+                    <div class="wrapper">
+
+                        <div class="form-check d-flex align-items-center gap-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <span class="h3 text-primary">Default checkbox</span>
+                            </label>
+                        </div>
+                        <div class="form-check d-flex align-items-center gap-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                <span class="h3 text-primary">Checked checkbox</span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="floating_labels border border-light-subtle mt-5 p-5">
+                    <div class="wrapper_title p-4">
+
+                        <span class="h2 text-success">Floating labels</span> <br><br>
+                        <p class="h3 text-white">
+                            Create beautifully simple form labels that float over your input fields.
+                            <br><br><br>
+                            <span class="text-success">Example</span> <br><br>
+                            Wrap a pair of "input class="form-control"" and label' elements in .form-floating to enable
+                            floating labels with Bootstrap’s textual form fields. A placeholder is required on each
+                            input' as our method of CSS-only floating labels uses the :placeholder-shown
+                            pseudo-element. Also note that the input' must come first so we can utilize a sibling
+                            selector (e.g., ~).
+                        </p>
+                    </div>
+
+                    <div class="wrapper">
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="./index.js"></script>
+
+</html>
